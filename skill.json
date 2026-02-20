@@ -1,0 +1,19 @@
+{
+  "name": "dev",
+  "description": "Autonomous development supervisor (OpenCode-based)",
+  "commands": {
+    "run": {
+      "description": "Start a new autonomous development task",
+      "args": ["task"]
+    },
+    "status": {
+      "description": "Show current supervisor status"
+    },
+    "approve": {
+      "description": "Approve the current plan and continue"
+    },
+    "reject": {
+      "description": "Reject the current plan"
+    }
+  }
+}
