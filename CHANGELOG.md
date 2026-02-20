@@ -2,7 +2,7 @@
 
 All notable changes and features of the OpenClawde Supervisor.
 
-## [1.0.0] - 2024-02-20
+## [1.0.0] - 2026-02-20
 
 ### Initial Release
 
