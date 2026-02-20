@@ -1,6 +1,6 @@
 # OpenClawde Supervisor
 
-A Python-based supervisor for managing OpenCode agent workflows with approval gates and policy enforcement.
+A Python-based supervisor for managing OpenCode agent workflows with approval gates and policy enforcement for integration with OpenClaw as a skill.
 
 **OpenClaw Compatible** - This project is designed as an OpenClaw skill and can be installed using `install.sh` for seamless integration with the OpenClaw ecosystem.
 
