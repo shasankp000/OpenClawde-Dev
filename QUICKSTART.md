@@ -4,6 +4,14 @@ Get started with the OpenClawde Supervisor in 5 minutes!
 
 ## Installation
 
+**One-line install:**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/shasankp000/OpenClawde-Dev/main/install.sh | bash
+```
+
+**Or manual install:**
+
 ```bash
 # 1. Clone the repository
 git clone https://github.com/shasankp000/OpenClawde-Dev.git
@@ -11,7 +19,11 @@ cd OpenClawde-Dev
 
 # 2. Run the installer
 bash install.sh
+```
 
+**Then:**
+
+```bash
 # 3. Restart your shell
 source ~/.bashrc  # or source ~/.zshrc for zsh
 

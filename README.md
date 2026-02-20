@@ -28,9 +28,17 @@ The OpenClawde Supervisor orchestrates OpenCode agents (plan and build) to execu
 
 ### Quick Install (OpenClaw Skill)
 
-To install as an OpenClaw skill:
+**One-line install (recommended):**
 
 ```bash
+curl -fsSL https://raw.githubusercontent.com/shasankp000/OpenClawde-Dev/main/install.sh | bash
+```
+
+**Or clone and install:**
+
+```bash
+git clone https://github.com/shasankp000/OpenClawde-Dev.git
+cd OpenClawde-Dev
 bash install.sh
 ```
 
