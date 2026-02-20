@@ -33,7 +33,8 @@ fi
 # ===== INSTALL SKILL =====
 echo "🧩 Installing OpenClaw skill..."
 mkdir -p "$SKILL_DIR"
-cp "$SUPERVISOR_DIR/skill.json" "$SUPERVISOR_DIR/run.sh" "$SKILL_DIR"
+cp "$SUPERVISOR_DIR/_meta.json" "$SUPERVISOR_DIR/run.sh" "$SKILL_DIR"
+cp "$SUPERVISOR_DIR/SKILL.md" "$SKILL_DIR" 2>/dev/null || true
 chmod +x "$SKILL_DIR/run.sh"
 
 # ===== ENV VAR SETUP =====

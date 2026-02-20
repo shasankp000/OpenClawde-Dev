@@ -420,43 +420,39 @@ supervisor.py
 
 ## Skill Structure
 
-This repository is structured as an OpenClaw skill:
+This repository is structured as an OpenClaw tool skill:
 
 ```
 OpenClawde/
 ├── supervisor.py          # Main supervisor logic
-├── skill.json            # OpenClaw skill manifest
-├── run.sh               # Skill execution wrapper
-├── install.sh           # Installation script
-├── config.json          # Configuration file
-├── state.json           # Runtime state (auto-generated)
-├── README.md            # This file
-└── WORKFLOW_EXAMPLE.md  # Detailed workflow examples
+├── _meta.json            # OpenClaw tool skill metadata
+├── SKILL.md              # Agent-readable skill documentation
+├── run.sh                # Tool execution wrapper
+├── install.sh            # Installation script
+├── config.json           # Configuration file (auto-generated)
+├── state.json            # Runtime state (auto-generated)
+├── README.md             # This file (human documentation)
+├── QUICKSTART.md         # Quick start guide
+├── WORKFLOW_EXAMPLE.md   # Detailed workflow examples
+└── CHANGELOG.md          # Feature history
 ```
 
-### Skill Manifest (`skill.json`)
+### Tool Skill Metadata (`_meta.json`)
 
 ```json
 {
-  "name": "dev",
-  "description": "Autonomous development supervisor (OpenCode-based)",
-  "commands": {
-    "run": {
-      "description": "Start a new autonomous development task",
-      "args": ["task"]
-    },
-    "status": {
-      "description": "Show current supervisor status"
-    },
-    "approve": {
-      "description": "Approve the current plan and continue"
-    },
-    "reject": {
-      "description": "Reject the current plan"
-    }
+  "owner": "shasankp000",
+  "slug": "dev",
+  "displayName": "Dev Supervisor",
+  "latest": {
+    "version": "0.1.0"
   }
 }
 ```
+
+### Agent Documentation (`SKILL.md`)
+
+The `SKILL.md` file provides agent-readable documentation about the skill's commands, behavior, and safety model. This is what OpenClaw agents reference when using the skill.
 
 ## Environment Variables
 
